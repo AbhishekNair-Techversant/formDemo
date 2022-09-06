@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Validation</title>
+	<link rel="stylesheet" href="css/styles.css" />
+	<script defer src="js/index.js"></script>
+</head>
+<body>
+	<div class="flex">
+		<form id="form">
+			<h2>Form Validation</h2>
+			<div class="inputControl">
+               	<label for="fname">First Name: </label>
+                	<input id="fname" name="fname" type="text">
+                	<div class="error"></div>
+            	</div>
+			<div class="inputControl">
+               	<label for="lname">Last Name: </label>
+                	<input id="lname" name="lname" type="text">
+                	<div class="error"></div>
+            	</div>
+            	<div class="inputControl">
+               	<label for="email">Email:</label>
+                	<input id="email" name="email" type="text">
+                	<div class="error"></div>
+            	</div>
+            	<div class="inputControl">
+                	<label for="num">Ph no:</label>
+                	<input id="num"name="password" type="num">
+                	<div class="error"></div>
+            	</div>
+            	<div class="inputControl">
+                	<label for="password">Password:</label>
+                	<input id="password"name="password" type="password">
+                	<div class="error"></div>
+            	</div>
+            	<button type="submit">Sign Up</button>
+		</form>
+	</div>
+</body>
+</html>
