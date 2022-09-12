@@ -3,6 +3,10 @@
 	margin:0;
 }
 
+body{
+	font-family: "Times New Roman", Times, serif;
+}
+
 form span{
 	display: block;
 	margin-top: 10px;
@@ -11,7 +15,7 @@ form span{
 
 #form {
     width: 350px;
-    margin: 20vh auto 0 auto;
+    margin: 10vh auto 0 auto;
     padding: 20px;
     background-color: whitesmoke;
     border-radius: 4px;
@@ -67,4 +71,40 @@ form span{
     color: #ff3860;
     font-size: 9px;
     height: 13px;
+}
+
+.radioClass{
+	padding: 10px;
+	padding-left: 0px;
+}
+
+.radioClass label{
+	padding-right: 70px;
+}
+
+.checkboxClass{
+	padding: 10px;
+	padding-left: 0px;
+}
+
+.checkboxClass label{
+	padding-right: 15px;
+}
+
+.dropDown label{
+	padding-right: 30px;
+}
+
+.dropDown{
+	padding-bottom: 20px;
+}
+
+select{
+	width: 200px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.textArea textarea{
+	rows= 4;	
+	width: 350px;
 }

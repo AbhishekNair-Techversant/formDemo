@@ -4,6 +4,7 @@ const lname = document.getElementById('lname');
 const num = document.getElementById('num');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
+document.getElementById("male").checked = true;
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -30,8 +31,13 @@ const setSuccess = element => {
 };
 
 const isValidNum = num => {
-  var re = /^\d{10}$/;
-  return re.test(num);
+  	var re = /^\d{10}$/;
+  	return re.test(num);
+}
+
+const isValidName = fname => {
+	var nameRegex = /^[a-zA-Z\-]+$/;
+	return nameRegex.test(fname);
 }
 
 const isValidEmail = email => {
@@ -48,13 +54,17 @@ const validateInputs = () => {
 
     if(fnameValue === '') {
         setError(fname, 'First Name is required');
-    } else {
+    } else if(!isValidName(fnameValue)){
+		setError(fname, 'Provide a valid first name');
+	} else {
         setSuccess(fname);
     }
 
 	if(lnameValue === '') {
         setError(lname, 'Second Name is required');
-    } else {
+    } else if(!isValidName(lnameValue)){
+		setError(lname, 'Provide a valid last name');
+	} else {
         setSuccess(lname);
     }
 
